@@ -54,8 +54,9 @@ export function distance(a: string, b: string) {
     }
   }
   return d[a.length][b.length];
-}/** Return an arry of StringWithDistance with the distance from the compared string*/
+}
 
+/** Return an arry of StringWithDistance with the distance from the compared string */
 export function distanceList(
   target: string,
   list: Array<string>,
@@ -63,8 +64,9 @@ export function distanceList(
   return list.map((string) => {
     return distanceDamerau(target, string);
   });
-}/** Return an object with string, compared string and distance beetween */
+}
 
+/** Return an object with string, compared string and distance beetween */
 export function distanceDamerau(
   string: string,
   compared: string,
@@ -84,7 +86,7 @@ export function compareDistance(
   return a.distance > b.distance ? 1 : a.distance < b.distance ? -1 : 0;
 }
 
-/**  Get the minimum Damerau-Levenshtein distance between a string and an array of strings*/
+/**  Get the minimum Damerau-Levenshtein distance between a string and an array of strings */
 export function minDistance(
   string: string,
   list: Array<string>,
@@ -94,14 +96,15 @@ export function minDistance(
     (min, b) => Math.min(min, b.distance),
     arrayStrings[0].distance,
   );
-}/** Return an arry of StringWithDistance sorted by min distance */
+} /** Return an arry of StringWithDistance sorted by min distance */
 
 export function sortByMinDistance(
   list: Array<StringWithDistance>,
 ): Array<StringWithDistance> {
   return list.concat().sort(compareDistance);
-}/** Return an arry of StringWithDistance sorted by min distance */
+}
 
+/** Return an arry of StringWithDistance sorted by min distance */
 export function sortWordByMinDistance(
   target: string,
   list: Array<string>,
@@ -111,7 +114,9 @@ export function sortWordByMinDistance(
     list,
   );
   return sortByMinDistance(listWithDistance);
-}// interface CompareStrings {
+}
+
+// interface CompareStrings {
 //   firstString: string;
 //   secondString: string;
 //   target: string;
