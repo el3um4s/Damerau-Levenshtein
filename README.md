@@ -11,15 +11,15 @@ Calculate the Damerau–Levenshtein distance between strings.
 Call to "distance" functions outputs an integer, the calculated Damerau-Levenshtein distance between 2 strings given as parameters. If the result is 0, strings are identical. The higher the result, the less similar strings are.
 
 ```typescript
-import { distance} as damerau from "./mod.ts";
+import { distance } from "https://deno.land/x/damerau_levenshtein/mod.ts";
 
 const firstString: string = "Hello";
 const secondString: string = "Hello World";
 
-const distance = damerau.distance(firstString, secondString);
+const d = distance(firstString, secondString);
 
 console.log(
-  `Damerau–Levenshtein distance between "${firstString}" and "${secondString}" is: ${distance} `,
+  `Damerau–Levenshtein distance between "${firstString}" and "${secondString}" is: ${d} `,
 );
 ```
 
@@ -32,7 +32,7 @@ deno run .\demo.ts "Hello Wordl" "Hello world"
 You can run the demo directly from the repository with the commands:
 
 ```
-deno run https://raw.githubusercontent.com/el3um4s/Damerau-Levenshtein/master/demo.ts  "Hello Wordl" "Hello world"
+deno run https://deno.land/x/damerau_levenshtein/demo.ts  "Hello Wordl" "Hello world"
 ```
 
 I was inspirated by [fabvalaaah](https://github.com/fabvalaaah)'s repository [damerau-levenshtein-js](https://github.com/fabvalaaah/damerau-levenshtein-js)
