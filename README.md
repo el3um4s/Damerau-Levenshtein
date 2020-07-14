@@ -3,6 +3,8 @@
 [![GitHub license](https://img.shields.io/github/license/el3um4s/Damerau-Levenshtein.svg)](https://github.com/el3um4s/Damerau-Levenshtein/blob/master/LICENSE)
 [![GitHub tag](https://img.shields.io/github/tag/el3um4s/Damerau-Levenshtein.svg)](https://GitHub.com/el3um4s/Damerau-Levenshtein/tags/)
 [![HitCount](http://hits.dwyl.com/el3um4s/Damerau-Levenshtein.svg)](http://hits.dwyl.com/el3um4s/Damerau-Levenshtein)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/raw.githubusercontent.com/el3um4s/Damerau-Levenshtein/master/mod.ts)
+[![deno.land](https://img.shields.io/badge/deno.land-1.2.0-blue)](https://deno.land/x/damerau_levenshtein)
 
 Calculate the Damerau–Levenshtein distance between strings.
 
